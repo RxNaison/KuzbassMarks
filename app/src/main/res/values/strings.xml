@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">KuzbassMarks</string>
+
+    <string name="title_1"></string>
+    <string name="title_2"></string>
+    <string name="title_3"></string>
+    <string name="title_4"></string>
+    <string name="title_5"></string>
+    <string name="title_6"></string>
+    <string name="title_7"></string>
+    <string name="title_8"></string>
+    <string name="title_9"></string>
+    <string name="title_10"></string>
+
+    <string name="storyLine_1"></string>
+    <string name="storyLine_2"></string>
+    <string name="storyLine_3"></string>
+    <string name="storyLine_4"></string>
+    <string name="storyLine_5"></string>
+    <string name="storyLine_6"></string>
+    <string name="storyLine_7"></string>
+    <string name="storyLine_8"></string>
+    <string name="storyLine_9"></string>
+    <string name="storyLine_10"></string>
+
+    <string name="fullStory_1"></string>
+    <string name="fullStory_2"></string>
+    <string name="fullStory_3"></string>
+    <string name="fullStory_4"></string>
+    <string name="fullStory_5"></string>
+    <string name="fullStory_6"></string>
+    <string name="fullStory_7"></string>
+    <string name="fullStory_8"></string>
+    <string name="fullStory_9"></string>
+    <string name="fullStory_10"></string>
+
+
+    <string name="FAQ">FAQ</string>
+    <string name="FAQ_URL"></string>
+    <string name="KuzbassMap">Kuzbass Map</string>
+    <string name="details">Подробнее</string>
+    <string name="appDescription">"""
+                    Проект "СЕКТОР-КУЗБАСС " направлен на
+                    информирование общественности о
+                    доступных для посещения исторических
+                    объектов Кузбасса.
+                """</string>
+    <string name="main">Главная</string>
+    <string name="showModelBtn">3D модель</string>
+    <string name="hideModelBtn">скрыть 3D модель</string>
+    <string name="info">Информация</string>
+    <string name="iventsMap">Карта событий</string>
+    <string name="elipse">elipse</string>
+
+</resources>
