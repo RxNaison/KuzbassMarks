@@ -26,6 +26,7 @@ import com.rx.kuzbassmarks.ui.theme.LightOrange
 fun DetailsBottomSheet(
     place: Place,
     isAboutVisible: Boolean,
+    isConnected: Boolean,
     onClose: () -> Unit,
     onDetailsClick: () -> Unit
 ) {
@@ -45,6 +46,7 @@ fun DetailsBottomSheet(
                 place = place,
                 isAboutVisible = isAboutVisible,
                 isVisible = isVisible[0],
+                isConnected,
                 onClose,
                 onDetailsClick = {
                     isVisible.indices.forEach { isVisible[it] = it == 0 }
@@ -61,6 +63,7 @@ fun DetailsBottomSheet(
                     place = subPlace,
                     isAboutVisible = isSubPlaceAboutVisible,
                     isVisible = isVisible[index + 1],
+                    isConnected,
                     onClose,
                     onDetailsClick = {
                         isVisible.indices.forEach { isVisible[it] = it == index + 1 }
@@ -78,6 +81,7 @@ private fun ShowPlaceInfo(
     place: Place,
     isAboutVisible: Boolean,
     isVisible: Boolean,
+    isConnected: Boolean,
     onClose: () -> Unit,
     onDetailsClick: () -> Unit
 ) {
@@ -126,7 +130,7 @@ private fun ShowPlaceInfo(
                 visible = isAboutVisible,
                 enter = slideInVertically(initialOffsetY = { fullHeight -> fullHeight })
             ) {
-                AboutScreen(place, onClose)
+                AboutScreen(place, isConnected, onClose)
             }
         }
     }

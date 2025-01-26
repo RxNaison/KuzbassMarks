@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KuzbassMarks</string>
+    <string name="app_name">СЕКТОР-КУЗБАСС</string>
 
     <string name="tomskWrite_title">Томская писаница</string>
     <string name="kuzFortress_title">Кузнецкая крепость</string>
@@ -277,6 +277,7 @@
     <string name="info">Информация</string>
     <string name="iventsMap">Карта событий</string>
     <string name="showOnMap">Показать на карте</string>
+    <string name="noInternet">О нет, у кого-то нету интернета</string>
     <string name="elipse" translatable="false">elipse</string>
 
     <string name="tomskWrite_modelPath" translatable="false">TomskWrite.glb</string>
