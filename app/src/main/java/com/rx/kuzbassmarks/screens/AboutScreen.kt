@@ -50,7 +50,7 @@ import com.rx.kuzbassmarks.R
 import com.rx.kuzbassmarks.ui.theme.KuzbassMarksTheme
 
 @Composable
-fun AboutScreen(place: Place, onClose: () -> Unit) {
+fun AboutScreen(place: Place, isConnected:Boolean, onClose: () -> Unit) {
     val LightOrange = colorResource(R.color.LightOrange)
     val DarkBlue = colorResource(R.color.DarkBlue)
     val Blue = colorResource(R.color.Blue)
@@ -95,8 +95,6 @@ fun AboutScreen(place: Place, onClose: () -> Unit) {
                 .padding(top = 30.dp, start = 8.dp)
         )
 
-
-
             Box(
                 modifier = Modifier
                     .padding(top = 30.dp, start = 8.dp)
@@ -121,7 +119,6 @@ fun AboutScreen(place: Place, onClose: () -> Unit) {
                     Text(text = stringResource(R.string.hideModel), color = Color.DarkGray)
             }
 
-
         AnimatedVisibility(
             visible = isModelViewerVisible
         ) {
@@ -132,7 +129,10 @@ fun AboutScreen(place: Place, onClose: () -> Unit) {
                     .padding(top = 2.dp, start = 20.dp, end = 20.dp)
             )
             {
-                ModelViewerWebView(place.modelPath)
+                if(isConnected)
+                    ModelViewerWebView(place.modelPath)
+                else
+                    NoConnectionScreen(isConnected)
             }
         }
 
@@ -228,26 +228,3 @@ private fun openExternalMap(context: Context, latitude: Double, longitude: Doubl
     context.startActivity(intent)
 }
 
-@Preview(showBackground = true)
-@Composable
-fun AboutScreenPreview() {
-    KuzbassMarksTheme {
-        val years = listOf("234")
-        val storyLine = listOf("")
-        AboutScreen(
-            Place(
-                0.2f,
-                0.2f,
-                stringResource(R.string.tomskWrite_title),
-                stringResource(R.string.tomskWrite_quickAbout),
-                "jn",
-                years,
-                storyLine,
-                1312.12323,
-                12323.2323,
-                "Fortress.glb"
-            ),
-            {}
-        )
-    }
-}
