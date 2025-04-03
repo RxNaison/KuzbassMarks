@@ -3,13 +3,16 @@
 This project was created to inform the public about attractions in Kuzbass 
 
 Main screen
-![1000003090](https://github.com/user-attachments/assets/49f941e8-cb5d-4ea9-b4c7-6a244ea81824)
+
+<img src="https://github.com/user-attachments/assets/49f941e8-cb5d-4ea9-b4c7-6a244ea81824" alt="Main screen" width="400"> 
 
 Choose place screen
-![1000003091](https://github.com/user-attachments/assets/c44a6df1-ee5a-4eee-86cb-96bdc8dbc5fe)
+
+<img src="https://github.com/user-attachments/assets/c44a6df1-ee5a-4eee-86cb-96bdc8dbc5fe" alt="Choose place screen" width="400">
 
 About place screen
-![1000003092](https://github.com/user-attachments/assets/9fc4b7d8-bce7-4090-9f5a-f0261ede1c65)
+
+<img src="https://github.com/user-attachments/assets/9fc4b7d8-bce7-4090-9f5a-f0261ede1c65" alt="About place screen" width="400">
 
 
 Since this is now a federal project it is published under the Attribution-NonCommercial-NoDerivatives 4.0 International license.
