@@ -1,5 +1,6 @@
 package com.rx.kuzbassmarks.screens
 
+import android.app.Application
 import com.rx.kuzbassmarks.components.*
 import com.rx.kuzbassmarks.models.Place
 
@@ -11,14 +12,20 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import com.rx.kuzbassmarks.models.getPlaces
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.rx.kuzbassmarks.models.MapViewModel
 import com.rx.kuzbassmarks.R
 
 
 @Composable
 fun MapScreen(isConnected: Boolean) {
     val context = LocalContext.current
-    val places = getPlaces()
+    val application = context.applicationContext as Application
+    val mapViewModel: MapViewModel = viewModel(
+        factory = MapViewModel.MapViewModelFactory(application)
+    )
+
+    val places by mapViewModel.places.collectAsState()
 
     var selectedPlace by remember { mutableStateOf<Place?>(null) }
     var isSheetOpen by remember { mutableStateOf(false) }
@@ -45,7 +52,7 @@ fun MapScreen(isConnected: Boolean) {
             DetailsBottomSheet(
                 place = it,
                 isAboutVisible = isAboutScreenVisible,
-                isConnected,
+                isConnected = isConnected,
                 onClose = {
                     selectedPlace = null
                     isSheetOpen = false
@@ -59,7 +66,5 @@ fun MapScreen(isConnected: Boolean) {
         {
             Footer()
         }
-
     }
 }
-
