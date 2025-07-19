@@ -4,11 +4,11 @@ This project was created to inform the public about attractions in Kuzbass
 
 # Screenshots
 
-<img src="https://github.com/user-attachments/assets/49f941e8-cb5d-4ea9-b4c7-6a244ea81824" alt="Main screen" width="400"> 
+<img src="https://github.com/user-attachments/assets/49f941e8-cb5d-4ea9-b4c7-6a244ea81824" alt="Main screen" width="250"> 
 
-<img src="https://github.com/user-attachments/assets/c44a6df1-ee5a-4eee-86cb-96bdc8dbc5fe" alt="Choose place screen" width="400">
+<img src="https://github.com/user-attachments/assets/c44a6df1-ee5a-4eee-86cb-96bdc8dbc5fe" alt="Choose place screen" width="250">
 
-<img src="https://github.com/user-attachments/assets/9fc4b7d8-bce7-4090-9f5a-f0261ede1c65" alt="About place screen" width="400">
+<img src="https://github.com/user-attachments/assets/9fc4b7d8-bce7-4090-9f5a-f0261ede1c65" alt="About place screen" width="250">
 
 # Development Environment
 
